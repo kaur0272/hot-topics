@@ -12,7 +12,7 @@
 /*full document*/
 
 body {
-    font-family: 'Fira Sans', sans-serif;
+    font-family: ;
     padding-top: 0;
     font-size: 0.75rem;
     box-sizing: border-box;
@@ -26,7 +26,7 @@ a {
 }
 
 a:hover {
-    color: darkgreen;
+    color: lightcyan;
 }
 
 
@@ -35,20 +35,14 @@ h2,
 h3,
 h4,
 h5 {
-    font-family: ;
+    font-family:;
 }
-
-
-
-
-
-
 
 
 /*nav*/
 
 .nav-link {
-    color: white;
+    color: blue;
 }
 
 .navbar-brand img {
@@ -60,7 +54,8 @@ h5 {
 .masthead {
     width: 100%;
     color: white;
-    background-image: url(./img/header.jpg);
+    text-shadow: 0.2rem 0.2rem black;
+    background-image: url(../img/header.jpg);
     background-size: cover;
     padding: 2rem;
     margin: 2rem 0 4rem 0;
@@ -103,7 +98,7 @@ figcaption {
     margin-bottom: 4rem;
 }
 
-.wolrd h2 {
+.world h2 {
     margin-bottom: 2rem;
     text-align: center;
 }
@@ -137,11 +132,11 @@ figure {
 /*footer*/
 
 footer {
-    background-color:lightgray;
+    background-color: black;
     padding: 3rem;
     margin: 0 auto;
-    color: black;
-    text-align: center;
+    color: white;
+    text-align: center !important;
 }
 
 
@@ -166,7 +161,7 @@ footer ul {
 
 footer h3 {
     margin-bottom: 2rem;
-    color: black;
+    color: #00C9AB;
 }
 
 

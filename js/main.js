@@ -1,7 +1,8 @@
-var $container = document.querySelector(".main-content");
-var $links = document.querySelectorAll("nav ul li a");
+const $container = document.querySelector(".main .content");
 
-var contents = {};
+const $links = document.querySelectorAll("nav ul li a");
+
+const contents = {};
 
 fetch("./partials/home.html")
     .then(function (response) {
@@ -9,9 +10,9 @@ fetch("./partials/home.html")
     })
     .then(function (data) {
         $container.innerHTML = data;
-    })
+    });
 
-var storeContents = function (urlVal) {
+const storeContents = function (urlVal) {
 
     if (!contents[urlVal]) {
 
@@ -28,19 +29,15 @@ var storeContents = function (urlVal) {
     }
 };
 
-
 const handleClick = function (e) {
-
     e.preventDefault();
 
     let key = e.target.href;
 
     storeContents(key);
-
 };
 
 for (let i = 0; i < $links.length; i++) {
 
     $links[i].addEventListener("click", handleClick);
-
 }
