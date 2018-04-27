@@ -1,18 +1,6 @@
-/*Colors
-
-#00C9AB
-#004C41
-#00FFD8
-#000000
-#FFFFFF
-
-
-*/
-
-/*full document*/
-
+/*color scheme: #ffffff, #000000, #8a2be2, #d3d3d3*/
 body {
-    font-family: ;
+    font-family: 'Open Sans', sans-serif;
     padding-top: 0;
     font-size: 0.75rem;
     box-sizing: border-box;
@@ -21,54 +9,81 @@ body {
 
 }
 
-a {
-    color: white;
-}
+header {
 
-a:hover {
-    color: lightcyan;
-}
-
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-    font-family:;
-}
-
-
-/*nav*/
-
-.nav-link {
-    color: blue;
-}
-
-.navbar-brand img {
-    width: 15rem;
-    height: auto;
-    background-size: cover;
+    background-color: #d3d3d3;
 }
 
 .masthead {
     width: 100%;
-    color: white;
-    text-shadow: 0.2rem 0.2rem black;
     background-image: url(../img/header.jpg);
     background-size: cover;
     padding: 2rem;
-    margin: 2rem 0 4rem 0;
-    text-align: center;
+
 }
 
 
+.logo {
+    width: 10%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Alegreya', serif;
+    color: #000000;
+}
+
+li {
+    overflow: hidden;
+    display: inline-block;
+}
+
+nav {
+    text-align: center;
+}
+
+nav li {
+    font-family: 'Alegreya', serif;
+    padding: 10px;
+    font-size: 1.5em;
+}
+
+nav a:link,
+nav a:visited {
+    text-decoration: none;
+    color: #000000;
+}
+
+nav a:hover,
+nav a:active {
+    text-decoration: none;
+    color: #8a2be2;
+}
 
 
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    color: black;
+}
 
-/*hot-topics*/
+article {
+    font-family: 'Roboto Slab', serif;
+    line-height: 1.5;
+}
 
-.main-content {
+img.cover {
+    width: 50%;
+    height: auto;
+}
+
+/*home Page*/
+
+.main {
 
     max-width: 60rem;
     padding: 0 1rem;
@@ -79,16 +94,17 @@ h5 {
 
 figcaption {
     margin-top: 1rem;
+    text-align: center;
 }
 
 
-.world img {
+.top img {
     width: 100%;
     height: auto;
     background-size: cover;
 }
 
-.world figure {
+.top figure {
     margin: 0 auto;
     text-align: center;
     width: 400px;
@@ -98,14 +114,15 @@ figcaption {
     margin-bottom: 4rem;
 }
 
-.world h2 {
-    margin-bottom: 2rem;
-    text-align: center;
+
+h2{
+text-align: center;
 }
 
-
-
-
+#article3{
+    
+  padding-left: 0px;
+}
 
 /*portfolio*/
 
@@ -123,27 +140,26 @@ figure {
     height: 300px;
 }
 
+footer {
+    text-align: center;
+    margin-top: 3em;
+}
 
-
-
-
-
-
-/*footer*/
 
 footer {
-    background-color: black;
+    background-color: #d3d3d3;
     padding: 3rem;
     margin: 0 auto;
-    color: white;
-    text-align: center !important;
+    color: #000000;
+    text-align: center;
 }
 
 
 .social li {
     float: left;
-    padding: 0 1em;
+    padding: 0 2em;
     list-style: none;
+    color:  #8a2be2;
 }
 
 footer .row {
@@ -157,35 +173,41 @@ footer ul {
     padding: 0;
     text-align: center;
     margin-bottom: 2rem;
+    color: #8a2be2;
 }
 
-footer h3 {
+footer h7 {
     margin-bottom: 2rem;
-    color: #00C9AB;
+    color:  #8a2be2;
 }
-
-
 
 
 @media only screen and (min-width: 35rem) {
-
+    .logo {
+        width: 10%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
     body {
         font-size: 1rem;
     }
 
-    /*hot-topics*/
+
     figcaption {
         margin-top: 1rem;
+        text-align: center;
     }
 
 
-    .world img {
+    .top img {
         width: 300px;
         height: 300px;
         background-size: cover;
     }
 
-    .world figure {
+    .top figure {
         float: left;
         margin: 0.5rem 3rem 0 0;
         width: 300px;
@@ -196,11 +218,6 @@ footer h3 {
     }
 
 
-
-    .space {}
-
-
-    /*footer*/
     .social li {
         float: left;
         padding: 0 1em;
@@ -211,67 +228,64 @@ footer h3 {
         width: 100%;
         margin: 0 auto;
     }
+    @media only screen and (min-width: 80rem) {
+        .logo {
+            width: 10%;
+            height: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        body {
+            font-size: 1.25rem;
+
+        }
+
+        article {
+            margin: 4rem;
+        }
 
 
+        .main {
 
-}
+            max-width: 80rem;
+            margin: 0 auto;
 
-@media only screen and (min-width: 80rem) {
+        }
 
-    body {
-        font-size: 1.25rem;
+
+        figcaption {
+            margin-top: 1rem;
+        }
+
+
+        .top img {
+            width: 300px;
+            height: 300px;
+        }
+
+        .top figure {
+            float: left;
+            display: inline-block;
+            margin-right: 3rem;
+        }
+
+        .info {
+            overflow: auto;
+            margin-bottom: 4rem;
+        }
+        /*footer*/
+        .social li {
+            float: left;
+            padding: 0 1em;
+            list-style: none;
+
+        }
+
+        footer .row {
+            width: 70%;
+            margin: 0 auto;
+        }
+
+
     }
-
-    article {
-        margin: 4rem;
-    }
-
-    /*hot-topics*/
-    .main-content {
-
-        max-width: 80rem;
-        margin: 0 auto;
-
-    }
-
-
-    figcaption {
-        margin-top: 1rem;
-    }
-
-
-    .world img {
-        width: 300px;
-        height: 300px;
-    }
-
-    .world figure {
-        float: left;
-        display: inline-block;
-        margin-right: 3rem;
-    }
-
-    .info {
-        overflow: auto;
-        margin-bottom: 4rem;
-    }
-
-
-
-
-
-
-    /*footer*/
-    .social li {
-        float: left;
-        padding: 0 1em;
-        list-style: none;
-    }
-
-    footer .row {
-        width: 70%;
-        margin: 0 auto;
-    }
-
-
-}
